@@ -38,7 +38,7 @@
                     }
 
                     function capital(){
-                        return $GLOBALS['n1'] - $GLOBALS['n2'];
+                        return $GLOBALS['n1'] / $GLOBALS['n4'] /100 *$GLOBALS['n3'] ;
                     }
 
                     function prazo(){
@@ -52,7 +52,7 @@
                     if($_GET['op'] == 'juros'){
                         echo "<h1> $n2 * $n3 * $n4/100 =" .juros(). "</h1>";
                     } else if ($_GET['op'] ==  'capital'){
-                        echo "<h1> $n1 - $n2 = " .capital(). "</h1>";
+                        echo "<h1> $n1 / $n4/100 * $n3 = " .capital(). "</h1>";
                     } else if ($_GET['op'] ==  'prazo'){
                         echo "<h1> $n1 * $n2 =" .prazo(). "</h1>";
                     } else if ($_GET['op'] ==  'taxa'){
