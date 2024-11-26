@@ -5,23 +5,27 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body class="p1">
-        <h1> Calculadora Juros </h1>
+        <!-- Rafael esteve por aqui-->
+        <center>
+        <h1 style="color:black #6AC4DE;"> Calculadora Juros </h1>
         <form method="GET" action="../php2/" class="p2">
-            <label for="num1" >Juros:</label><br>
+            <label for="num1" style="color:black;">Juros:</label><br>
             <input type="text" name="juros"><br>
-            <label for="num1" >Capital:</label><br>
+            <label for="num1" style="color:black;">Capital:</label><br>
             <input type="text" name="capital"><br>
-            <label for="num2">Prazo:</label><br>
+            <label for="num2" style="color:black;">Prazo:</label><br>
             <input type="text" name="prazo"><br>
-            <label for="num2">Taxa:</label><br>
+            <label for="num2" style="color:black;">Taxa:</label><br>
             <input type="text" name="taxa"><br>
             <input type="submit" value="Calcular">
-            <fieldset style="margin-right: 1000;">                
+            <fieldset style="margin-right: 0;">
+                        
                 <legend>Operações</legend>
-                <input type="radio" name="op" value="juros" checked>Juros</input><br>
-                <input type="radio" name="op" value="capital">Capital</input><br>
-                <input type="radio" name="op" value="prazo" checked>Prazo</input><br>
-                <input type="radio" name="op" value="taxa" checked>Taxa</input><br>
+                <input type="radio" name="op" value="juros" checked style="color:black;">Juros</input><br>
+                <input type="radio" name="op" value="capital" style="color:black;">Capital</input><br>
+                <input type="radio" name="op" value="prazo" checked style="color:black;">Prazo</input><br>
+                <input type="radio" name="op" value="taxa" checked style="color:black;">Taxa</input><br>
+                
             </fieldset>
         </form>
         <?php
@@ -32,9 +36,10 @@
                     $n2 = $_GET['capital'];
                     $n3 = $_GET['prazo'];
                     $n4 = $_GET['taxa'];
+                    
 
                     //A Laura esteve aqui... 
-            
+        
                     function juros(){
                         return $GLOBALS['n2'] * $GLOBALS['n3'] * $GLOBALS['n4']/100;
                     }
@@ -62,7 +67,7 @@
                     }
                 }
             }
-
+            
         ?>
     </body>
 </html>
