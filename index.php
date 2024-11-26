@@ -32,6 +32,8 @@
                     $n2 = $_GET['capital'];
                     $n3 = $_GET['prazo'];
                     $n4 = $_GET['taxa'];
+
+                    //A Laura esteve aqui... 
             
                     function juros(){
                         return $GLOBALS['n2'] * $GLOBALS['n3'] * $GLOBALS['n4']/100;
