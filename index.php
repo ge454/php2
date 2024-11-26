@@ -46,7 +46,7 @@
                     }
 
                     function taxa(){
-                        return $GLOBALS['n1'] /  $GLOBALS['n2'];
+                        return (float) $GLOBALS['n1'] / $GLOBALS['n2'] * $GLOBALS['n4']/100;
                     }
        
                     if($_GET['op'] == 'juros'){
@@ -56,7 +56,7 @@
                     } else if ($_GET['op'] ==  'prazo'){
                         echo "<h1> $n1 / $n4/100 * $n2  =" .prazo(). "</h1>";
                     } else if ($_GET['op'] ==  'taxa'){
-                        echo "<h1> $n1 / $n2 =" .taxa(). "</h1>";
+                        echo "<h1> $n1 / $n2 * $n4/100 =" .taxa(). "</h1>";
                     }
                 }
             }
